@@ -4,10 +4,6 @@ import binascii
 import os
  
 keyPair = RSA.generate(2048)
-
-
-os.write
-
 pubKey = keyPair.publickey()
 print(f"Public key:  (n={hex(pubKey.n)}, e={hex(pubKey.e)})")
 pubKeyPEM = pubKey.exportKey()
